@@ -1,0 +1,746 @@
+/* --- BEAN & BREW STYLE SHEET --- */
+
+/* Colours:
+Primary - #2F4B26 - Dark Spruce
+Secondary - #271F5E - Deep Twilight
+Secondary - #462424 - Espresso
+Neutral - #E1A540 - Honey Bronze
+Neutral - #FFE0AC - Navajo White
+ */
+
+
+/* Site Defaults */
+
+/* Fonts
+Main menu, headings - Dream Avenue
+Paragraphs and other text - Goudy Old Style */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'DreamAvenue';
+    src: url('fonts/DreamAvenueRegular.otf')
+}
+
+@font-face {
+    font-family: 'GoudyOldStyle';
+    src: url('fonts/GoudyOldStyle.TTF');
+}
+
+
+body{
+    background-color: #2f4b2f;
+    font-family: GoudyOldStyle;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.visually-hidden {      /* works better with accessibility aids than display:none */
+    position:absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding:0;
+    clip: rect(0 0 0 0);    /* for older browser */
+    white-space: nowrap;
+    border: 0;
+
+}
+
+
+
+
+
+
+
+
+/* ----------- Navigation Bar ----------  */
+
+
+.navbar {
+    display:flex;
+    position: relative;
+    top: 0;
+    font-family: DreamAvenue;
+    font-size: 28px;
+    padding: 30px 10px 30px 10px;
+    justify-content: space-between;
+    z-index: 999;
+    /* border: solid 2px greenyellow; */
+    align-items: baseline;
+}
+
+.navbar a {
+    color:#e1a540;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a:focus {
+    outline: 3px solid #e1a540;
+    outline-offset: 3px;
+}
+
+.nav-button-selected {
+    font-size: 130%;
+    color: #e1a540;
+    text-decoration: underline;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Page Defaults ---------- */
+
+.page-title {
+    /* background-color: #271f5e; */
+    display: flex;
+    justify-content: left;
+    line-height: 100px;
+    padding: 35px 0px 25px 0px;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    /* border: 5px solid greenyellow; */
+}
+
+h1 {
+    color: #ffe0ac;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #ffe0ac;
+}
+
+h3 {
+    font-size: 23px;
+    color: #e1a540;
+    line-height: 22px;
+}
+
+p {
+    font-size: 20px;
+    color: #ffe0ac;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+
+.footer-bar {
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+    color:#e1a540;
+    padding: 35px 0px 0px 0px;
+    align-items: center;
+    /* border: solid 5px greenyellow; */
+}
+
+.address-box {
+    display: flex;
+    justify-content: left;
+    white-space: nowrap;
+    width: 300px;
+    color:#e1a540;
+    /* border: solid 3px greenyellow;  */
+}
+
+.address-line {
+    padding: 5px 8px 5px 8px;
+    margin: auto;
+}
+
+.address-box-mobile {
+    display: none;
+    text-align: center;
+    width: 100%;
+    /* border: solid 3px greenyellow */
+}
+
+.footer-menu {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width:500px;
+    margin: auto;
+    /* border: solid 3px greenyellow; */
+}
+
+.footer-menu a {
+    color: #e1a540;
+    text-decoration: none;
+    padding: 5px 8px 5px 8px;
+    text-wrap: nowrap; 
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu a:focus {
+    outline: 3px solid #e1a540;
+    outline-offset: 3px;
+}
+
+
+ .social-media-box {
+    width: 300px;
+    /* border: solid 3px greenyellow; */
+}
+
+.social-media-imgs {
+    display: flex;
+    justify-content: right;
+}
+
+.social-media-imgs img {
+    width: 30px;
+    padding: 5px 8px 5px 8px;
+}
+
+
+.copyrightstamp {
+    font-size: 18px;
+    color: #e1a540;
+    text-align: center;
+    padding: 10px;
+    /* border: greenyellow 3px solid; */
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- Home Page ---------- */
+
+.homeimage {
+    text-align: center;
+}
+
+.homeimage img {
+    /* border: solid 5px greenyellow; */
+    height: 450px; 
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- About Us Page ---------- */
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 5px greenyellow; */
+    }
+
+.about-us-text-1 {
+    width: 60%;
+    padding: 40px 40px 40px 0px;
+    text-align: justify;
+    /* border: greenyellow 3px solid; */
+    
+}
+
+.about-us-text-2 {
+    width: 60%;
+    padding: 40px 0px 40px 40px;
+    text-align: justify;
+    /* border: greenyellow 3px solid; */
+    
+}
+
+.about-us-image {
+    width: 39%;
+    padding: 40px 0px;
+    /* border: greenyellow 3px solid; */
+}
+
+.about-us-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border: greenyellow 3px solid; */
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- Menus Page ---------- */
+
+.menus-text {
+    /* border: solid 5px greenyellow; */
+    padding: 35px 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menus-button {
+    padding: 8px;
+}
+
+.menus-button a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;   
+}
+
+.menus-button a:focus {
+    display: inline-block;
+    position: relative;
+    outline: 3px solid #e1a540;
+    outline-offset: 2px;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- What's On Page ---------- */
+
+.whatson-featured {
+    border: solid 2px #e1a540;
+    background-color: #3a5a32;
+    padding: 25px;
+}
+
+.whatson-featured h2 {
+    font-size: 200%;
+}
+.whatson-featured h3 {
+    line-height: 200%;
+    font-size: 150%;
+}
+
+.whatson-featured-container {
+    /* border: solid 5px greenyellow; */
+    display: flex;
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
+.whatson-featured-text {
+    /* border: solid 5px greenyellow; */
+    padding: 0px 35px 0px 0px;
+    margin: 0 auto;
+    max-width: 700px;
+    flex: 6;
+}
+
+.whatson-featured-video {
+    flex: 3;
+    /* border: solid 5px greenyellow; */
+}
+
+.whatson-featured-video iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+}
+
+.whatson-container {
+    /* border: solid 5px greenyellow; */
+    display: flex;
+    align-items: stretch;
+    
+}
+
+.whatson-container-column-1 {
+    /* border: solid 5px turquoise; */
+    flex: 4;
+    
+}
+
+.whatson-calendar {
+    /* border: solid 5px greenyellow; */
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    height: 100%;
+    }
+
+.whatson-calendar .weekday {
+    width: 20%;
+    word-wrap: normal;
+}
+
+.whatson-calendar .whatson-day {
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.whatson-calendar td {
+    /* border: solid 5px greenyellow; */
+    padding: 25px;
+    word-wrap: break-word;
+    border: none;
+}
+
+.whatson-calendar p {
+    text-align: justify;
+}
+
+.tr-1 {
+    background-color: #271f5e;
+}
+
+.tr-2 {
+    background-color: #462424;
+}
+
+.weekday {
+    padding: 30px;
+}
+
+.whatson-container-column-2 {
+    /* border: solid 5px greenyellow; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.whatson-container-column-2 img {
+    width: 100%;
+    height: calc(100%/8);
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- Contact Us Page ---------- */
+
+.form-container {
+    /* border: greenyellow 3px solid; */
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contact-form {
+    border: solid 5px #ffe0ac;
+    padding: 35px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+label {
+    line-height: 45px;
+    font-size: 28px;
+    color: #ffe0ac;
+}
+
+input, textarea {
+    font-size: 20px;
+    border: solid 3px #462424;
+    color: #271f5e;
+}
+
+input[type="text"], input[type="email"] {
+    width: 90%;
+    max-width: 600px;
+    display: block;
+}
+
+#your-message {
+    min-height: 100px;
+    width: 90%;
+}
+
+.error {
+    /* color: tomato; */
+    color: #f07c24;
+    /* color: coral; */
+}
+
+#formMessage {
+    color: #e1a540;
+}
+
+
+button {
+    padding: 8px;
+    background-color: #462424;
+    color:#e1a540;
+    font-size: 16px;
+    border: #e1a540 3px solid;  
+    margin: 3px;
+    display:flex;
+    justify-content: center;
+    font-family: GoudyOldStyle;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+/* -- RESPONSIVE DESIGN -- */
+
+@media (max-width:768px) {
+
+  .page-container {
+    padding: 20px;
+  }
+
+
+
+  .nav-toggle {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    font-family: GoudyOldStyle;
+    font-size: 28px;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-family: GoudyOldStyle;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  .navbar a{
+    margin: 25px;
+    padding: 5px;
+  }
+
+  .navbar.open {
+    display: flex;
+    /* border: greenyellow 3px solid; */
+  }
+
+  .nav-button, .nav-button-selected {
+    font-size: 120%;
+    padding: 8px;
+    /* border: greenyellow 3px solid; */
+  }
+
+
+
+  .footer-bar {
+    flex-direction: column;
+  }
+  
+  .address-box {
+    display: none;
+  }
+
+  .address-box-mobile {
+    display: grid;
+    padding: 10px 0px;
+    /* border: greenyellow 3px solid; */
+  }
+
+  .footer-menu {
+    display: grid;
+    width: 90%;
+    /* border: greenyellow 3px solid; */
+    padding: 10px;
+  }
+
+  .social-media-imgs {
+    justify-content: center;
+  }
+
+
+
+  .page-title {
+    /* border: greenyellow 3px solid; */
+    /* padding: 15px 0px 5px 0px; */
+    line-height: 90px;
+  }
+
+
+
+  /* Home Page */
+
+  .homeimage {
+    max-width: 100%;
+    /* border: greenyellow 3px solid; */
+  }
+
+  .homeimage img {
+    object-fit:contain;
+    width: 90%;
+    /* border: greenyellow 3px solid; */
+  }
+
+
+
+
+  /* About Us */
+
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-us-image, .about-us-text-1, .about-us-text-2{
+    width: 96%;
+    margin: 0 auto;
+    padding: 5px;
+    /* border: greenyellow 3px solid; */
+  }
+
+
+
+
+  /* Menus */
+
+  .menus-button img {
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+  }
+
+
+
+
+  /* What's On */
+
+  .whatson-featured {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .whatson-featured-container {
+    flex-direction: column;
+
+  }
+  .whatson-featured-video {
+    margin: 26px 0px 0px 0px;
+  }
+
+  .whatson-container {
+    flex-direction: column;
+  }
+
+  .whatson-calendar {
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    }
+
+  .whatson-calendar .weekday {
+    width: 38%;
+  }
+
+  .whatson-calendar h2 {
+    font-size: 18px;
+  }
+
+  .whatson-calendar .whatson-day {
+    width: 62%;
+    font-size: 15px;
+  }
+
+  .whatson-container-column-2 {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .whatson-container-column-2 img {
+    flex: 0 0 auto;
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+  }
+
+
+
+
+  /* Contact Form */
+
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact-form [type="text"], input[type="email"] {
+    width: 95%;
+  }
+
+  #your-message {
+    width: 95%;
+  }
+}
